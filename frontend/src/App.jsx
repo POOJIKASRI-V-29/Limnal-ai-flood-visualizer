@@ -63,7 +63,7 @@ export default function App() {
   const analyze = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/analyze", {
+      const res = await fetch("https://limnal-ai-flood-visualizer-lz9g.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ city, rainfall, drainage, elevation }),
